@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dadu's bday</title>
+    <link rel="icon" type="images/jpeg" href="thumbnail1.jpg">
+    <style>
+    body {
+        margin: 0;
+
+        background: linear-gradient(to bottom, rgb(255, 242, 242),rgb(160, 158, 158));
+    }
+    .font1 {
+      font-family: "Alan Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
+    }
+    .progress-bar {
+        width: 96%;
+        height: 70px;
+        background: rgb(215, 203, 203);
+        margin-top: 5px;
+        border-radius: 40px;
+        transition: 1s;
+    }
+    .cir1 {
+        width: 50px;
+        height: 50px;
+        background: rgb(154, 146, 146);
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+    }
+    .gap1 {
+        margin-left: 10px;
+    }
+    .gap2 {
+        margin-right: 10px;
+    }
+    .current1 {
+        border: 5px dotted black;
+    }
+    .button_style1 {
+        width: 100px;
+        height: 50px;
+        border-radius: 50px;
+        border: none;
+        font-size: 15px;
+        font-weight: 600;
+        background: gray;
+        color: white;
+    }
+    .button_style2 {
+        width: 100px;
+        height: 50px;
+        border-radius: 10px;
+        border: none;
+        font-size: 25px;
+        font-weight: 600;
+        transition: 0.5s;
+        display: flex;
+        align-items: center;
+    }
+    .button_style2:hover {
+        filter: brightness(80%);
+    }
+    .button_style3 {
+        width: 40px;
+        height: 30px;
+        border-radius: 10px;
+        border: none;
+        font-size: 25px;
+        font-weight: 600;
+        transition: 0.5s;
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+    }
+    .button_style3:hover {
+        filter: brightness(80%);
+    }
+    .box1 {
+        margin-top: 20px;
+        width: 100%;
+        padding-bottom: 35px;
+      
+    }
+    .box2 {
+        margin-top: 20px;
+        width: 100%;
+        display: none;
+        padding-bottom: 35px;
+      
+    }
+    .box3 {
+        margin-top: 20px;
+        width: 100%;
+        display: none;
+      padding-bottom: 35px;
+    }
+    .box4 {
+        margin-top: 20px;
+        width: 100%;
+        display: none;
+        padding-bottom: 35px;
+    }
+    button {
+        cursor: pointer;
+    }
+    .vbg1 {
+        position: fixed;
+        bottom: 0;
+        right: -1000;
+        min-height: 100vh;
+        min-width: 100%;
+        z-index: -1;
+        filter: blur(20px);
+        overflow: hidden;
+        background: #000;
+        object-fit: cover;
+        transform: scale(1.05); 
+    }
+    .inpstyle1 {
+        width:80%;
+        height: 30px;
+        border: none;
+        border-radius: 10px;
+        font-weight: 500;
+        font-size: 20px;
+        text-align: center;
+    }
+    .copybox1 {
+        width: 100%;
+        height: 40px;
+        background: rgb(199, 199, 199);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    </style>
+</head>
+<body class="font1" onscroll="check1()">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap" rel="stylesheet">
+
+<img src="decoration2.png" style="width: 100%;position: absolute;top: 0;left: 0;z-index: -1;opacity: 0.5;">
+
+
+
+<p style="margin-left: 5px;font-weight: 900;font-size: 50px;text-align: center;color: rgb(41, 36, 36);text-shadow: 2px 2px #a39595">Happy Birthday Dadu</p>
+<div style="width: 100%;display: flex;justify-content: center;align-items: center;position: sticky;left: 0;top: 0;z-index:1;"><div class="progress-bar" id="pb1">
+        <div style="width: 100%;height:100%;display: flex; justify-content: space-between;align-items: center;">
+            <div class="cir1 gap1" id="pg1"><a style="font-weight: 600;font-size: 20px;">1</a></div>
+            <div class="cir1" id="pg2"><img src="cake1.svg"></div>
+            <div class="cir1" id="pg3"><img src="photo1.svg" height="30"></div>
+            <div class="cir1 gap2" id="pg4"><a style="font-weight: 600;font-size: 20px;">4</a></div>
+        </div>
+    </div>
+</div>
+<br><div style="margin-left: 15px;"><button disabled onclick="backward1()" id="bb1" class="button_style1 font1">Previous</button>&nbsp;&nbsp;<button onclick="forward1()" id="fb1" class="button_style1 font1">Next</button></div>
+<div class="box1" id="box-1">
+    <div style="margin-left: 15px;text-align: justify;margin-right: 15px;background: rgb(216, 216, 216);border-radius: 10px;"><div style="margin-left: 20px;margin-right: 20px;padding-top: 10px;padding-bottom: 20px;"><p style="margin-bottom: 0px;font-size: 40px;font-weight: 800;margin-top: 10px;">Welcome,</p><br><a style="font-size: 23px;font-weight: 400;">Hey Dadu , Happy Birthday!!! Today i've wrote a birthday message for you. I cant wait to show it to you! And also I've some interesting things to show you too!<br><br>Start by clicking the 'Next' button above ⬆️</a></div></div>
+</div>
+<div class="box2" id="box-2">    
+    <div style="margin-left: 15px;text-align: justify;margin-right: 15px;background: rgb(216, 216, 216);border-radius: 10px;"><div style="margin-left: 20px;margin-right: 20px;padding-top: 10px;padding-bottom: 20px;"><p style="margin-bottom: 0px;font-size: 40px;font-weight: 800;margin-top: 10px;">Dear dadu,</p><br><a style="font-size: 23px;font-weight: 400;font-style: italic;">"Happy birthday! I hope that you are having a great day at Qatar. This year you turned <b>82</b> and this is such a huge achievement for you! You worked very hard to reach this milestone. You have been a great teacher for everything(including maths) to me and to many other students whom you helped to achieve sucess. Overall, you are a complete man and I hope that you can spend many more years with us. I miss you and I fell bored without you. Looking forward to your arrival at Kolkata. Anyways,once again a very happy birthday Dadu!! "<br><br>-Ryan<br><br>There's more.....Click on the 'Next' button</a><br><br><button class="button_style2 font1" onclick="copy1()"><img src="copy1.svg" height="30">Copy</button></div></div>
+</div>
+<div class="box3" id="box-3">
+    <p style="text-align: center;font-weight: 700;font-size: 40px;">Looking back...</p>
+    <p style="text-align: center;font-size: 20px;font-weight: 600;">Images picked by Papa</p>
+    <div style="width: 100%;display: flex;justify-content: space-between;"><div style="margin-left: 20px;width: 50%;display: flex;justify-content: center;"><div style="width: 140px;transform: rotateZ(5deg);background: rgba(0, 0, 0, 0);display: flex;justify-content: center;box-shadow: 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"><img src="img1.jpg" height="200"></div></div><div style="width: 50%;margin-left: 10px;"><a style="font-size: 20px;font-weight: 800;">At Sitong</a><br><a>This was a wonderful experience with dadu. Fun fact: That time it was my birthday</a></div></div>
+    <br><br><div style="width: 100%;display: flex;justify-content: space-between;"><div style="width: 50%;margin-left: 20px;"><a style="font-size: 20px;font-weight: 800;">At Punjab</a><br><a>Fulfilling dadu's dream of visting Punjab and Golden Temple. It was a wonderful experience</a></div><div style="margin-right: 20px;width: 50%;display: flex;justify-content: center;"><div style="width: 140px;transform: rotateZ(5deg);background: rgba(0, 0, 0, 0);display: flex;justify-content: center;box-shadow: 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"><img src="img2.jpg" height="200"></div></div></div>
+    <br><br><div style="width: 100%;display: flex;justify-content: space-between;"><div style="margin-left: 20px;width: 50%;display: flex;justify-content: center;"><div style="width: 140px;transform: rotateZ(5deg);background: rgba(0, 0, 0, 0);display: flex;justify-content: center;box-shadow: 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"><img src="img3.jpg" height="200"></div></div><div style="width: 50%;margin-left: 10px;"><a style="font-size: 20px;font-weight: 800;">At cafe</a><br><a>May not be a big moment, but still!!</a></div></div>
+    <br><br><div style="width: 100%;display: flex;justify-content: space-between;"><div style="width: 50%;margin-left: 20px;"><a style="font-size: 20px;font-weight: 800;">At Punjab</a><br><a>Another picture in lift lobby. The crew here (expect Hiya :/ )</a></div><div style="margin-right: 20px;width: 50%;display: flex;justify-content: center;"><div style="width: 140px;transform: rotateZ(5deg);background: rgba(0, 0, 0, 0);display: flex;justify-content: center;box-shadow: 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"><img src="img4.jpg" height="200"></div></div></div>
+    <br><br><div style="width: 100%;display: flex;justify-content: space-between;"><div style="margin-left: 20px;width: 50%;display: flex;justify-content: center;"><div style="width: 140px;transform: rotateZ(5deg);background: rgba(0, 0, 0, 0);display: flex;justify-content: center;box-shadow: 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"><img src="img5.jpg" height="130" width="130"></div></div><div style="width: 50%;margin-left: 10px;"><a style="font-size: 20px;font-weight: 800;">At beach</a><br><a>Looks good. Puri was a wonderful trip for dadu and me</a></div></div>
+    <br><br><div style="width: 100%;display: flex;justify-content: space-between;"><div style="width: 50%;margin-left: 20px;"><a style="font-size: 20px;font-weight: 800;">At Punjab</a><br><a>Picture taken in the Golden Temple. Dadu looks really happy in this one</a></div><div style="margin-right: 20px;width: 50%;display: flex;justify-content: center;"><div style="width: 140px;transform: rotateZ(5deg);background: rgba(0, 0, 0, 0);display: flex;justify-content: center;box-shadow: 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"><img src="img6.jpg" height="150" width="140"></div></div></div>
+</div>
+<div class="box4" id="box-4">
+        <div style="margin-left: 15px;text-align: justify;margin-right: 15px;background: rgb(216, 216, 216);border-radius: 10px;"><div style="margin-left: 20px;margin-right: 20px;padding-top: 10px;padding-bottom: 20px;"><p style="margin-bottom: 0px;font-size: 40px;font-weight: 800;margin-top: 10px;">The End</p><br><a style="font-size: 23px;font-weight: 400;">Thanks for giving your valuable time!! I didnt get much time to prepare this since I also had to complete my studies and tons of projects . So, some things may not be upto the mark. You can give me suggestions so that I can do better. Anyways,enjoy this day🥳🥳 </a><br><br><div style="width: 100%;display: flex;justify-content: center;"><div class="copybox1"><input style="margin-left: 10px;height: 100%;width: 70%;background: rgba(0, 0, 0, 0);border: none;font-weight: 700;" value="WEbsite link" id="message2" readonly><button class="font1 button_style3" onclick="copy2()"><img src="copy1.svg"></button></div></div>
+</div>
+
+<button style="align-items: center;justify-content: center;height: 50px;width: 50px;border: none;border-radius: 50px;position: fixed;bottom: 10px;right: 10px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);transition: 0.5s;display: flex;opacity: 1;" onclick="window.scrollTo({top:0,left:0,behavior:'smooth'})" id="stb1"><img src="up1.svg" height="50"></button>
+<!---<video  muted autoplay class="vbg1">
+  <source src="vid1.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>-->
+<input value="Happy birthday! I hope that you are having a great day at Qatar. This year you turned 82 and this is such a huge achievement for you! You worked very hard to reach this milestone. You have been a great teacher for everything(including maths) to me and to many other students whom you helped to achieve sucess. Overall, you are a complete man and I hope that you can spend many more years with us. I miss you and I fell bored without you. Looking forward to your arrival at Kolkata. Anyways,once again a very happy birthday Dadu!!" type="text" id="message1" style="display: none;">
+<script>
+
+
+    
+    var page = 1;
+    var page_limit = 4;
+    var pc = true;//page changable
+    const progb1 = document.getElementById("pb1");
+    const circle1 = document.getElementById("pg1");
+    const circle2 = document.getElementById("pg2");
+    const circle3 = document.getElementById("pg3");
+    const circle4 = document.getElementById("pg4");
+    const backward_button = document.getElementById("bb1");
+    const forward_button = document.getElementById("fb1");
+    const sb1 = document.getElementById("stb1");
+    const bx1 = document.getElementById("box-1");
+    const bx2 = document.getElementById("box-2");
+    const bx3 = document.getElementById("box-3");
+    const bx4 = document.getElementById("box-4");
+    page_update1();
+    function page_update1() {
+        if(page > 1) {
+            bb1.disabled = false;
+        }
+        if(page < page_limit) {
+            fb1.disabled = false;
+        }
+        if (page === 1) {
+            circle1.classList.add("current1");
+            circle2.classList.remove("current1");
+            circle3.classList.remove("current1");
+            circle4.classList.remove("current1");
+            page1();
+        }
+        else if (page === 2) {
+            circle1.classList.remove("current1");
+            circle2.classList.add("current1");
+            circle3.classList.remove("current1");
+            circle4.classList.remove("current1");
+            page2();
+        }
+        else if (page === 3) {
+            circle1.classList.remove("current1");
+            circle2.classList.remove("current1");
+            circle3.classList.add("current1");
+            circle4.classList.remove("current1");
+            page3();
+        }
+        else if(page === 4) {
+            circle1.classList.remove("current1");
+            circle2.classList.remove("current1");
+            circle3.classList.remove("current1");
+            circle4.classList.add("current1");
+            page4();
+        }
+        else {
+            circle1.classList.remove("current1");
+            circle2.classList.remove("current1");
+            circle3.classList.remove("current1");
+            circle4.classList.remove("current1");
+            
+        }
+    }
+    function page1() {
+        bx1.style.display = "block";
+        bx2.style.display = "none";
+        bx3.style.display = "none";
+        bx4.style.display = "none";
+    }
+    function page2() {
+        bx1.style.display = "none";
+        bx2.style.display = "block";
+        bx3.style.display = "none";
+        bx4.style.display = "none";
+    }
+    function page3() {
+        bx1.style.display = "none";
+        bx2.style.display = "none";
+        bx3.style.display = "block";
+        bx4.style.display = "none";
+    }
+    function page4() {
+        bx1.style.display = "none";
+        bx2.style.display = "none";
+        bx3.style.display = "none";
+        bx4.style.display = "block";
+    }
+    function forward1() {
+        if(page != page_limit) {
+            page+=1;
+            page_update1();
+            if(page === page_limit) {
+                fb1.disabled = true;
+            }
+        }
+        else {
+            fb1.disabled = true;
+        }
+    }
+    function backward1() {
+        if(page != 1) {
+            page-=1;
+            page_update1();
+            if(page === 1) {
+                bb1.disabled = true;
+            }
+        }
+        else {
+            bb1.disabled = true;
+        }
+    }
+        function check1() {
+
+        var rpb = progb1.offsetTop;
+        var po = window.pageYOffset;
+        if(po > rpb+120) {
+            progb1.style.boxShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
+        }
+        else {
+            progb1.style.boxShadow = "none";
+        }
+        if(po > rpb+160) {
+            sb1.style.display="flex";
+        }
+        else {
+            sb1.style.display="none";
+        }
+    }
+function copy1() {
+  // Get the text field
+  var copyText = document.getElementById("message1");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+
+  // Alert the copied text
+  alert("Thanks for copying the message! ");
+}
+function copy2() {
+  // Get the text field
+  var copyText = document.getElementById("message2");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+
+  // Alert the copied text
+  alert("Thanks for copying the website link! ");
+}
+</script>
+</body>
+</html>
